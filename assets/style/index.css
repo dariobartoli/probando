@@ -21,7 +21,6 @@ body{
     align-items: center;
     height: 10dvh;
     padding: 0px 20px 0px 20px;
-    border-bottom: 1px solid #6C84B9;
     position: fixed;
     top: 0;
     width: 100%;
@@ -573,6 +572,7 @@ body{
 @media (width>768px) {
     .nav__container{
         height: 13dvh;
+        border-bottom: 1px solid #6C84B9;
     }
     .nav__box{
         display: flex;
