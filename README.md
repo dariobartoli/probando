@@ -10,4 +10,6 @@ Extras:
 
 -Le di efecto al hacer click en el menú en resolución mobile
 
--Utilicé google maps para implementar la ubicación, para que sea mas dinámico.
+-Utilicé google maps para implementar la ubicación, para que sea mas dinámico
+
+-Utilicé photoshop para poder implementar algunos de los iconos de la página.
