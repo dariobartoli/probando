@@ -550,6 +550,9 @@ body{
 .map{
     width: 100%;
 }
+.map2{
+    display: none;
+}
 @media (width > 272px) {
     .speaker__box{
         height: 520px;
@@ -988,6 +991,9 @@ body{
 }
 
 @media (width>1920px){
+    .main__container{
+        gap: 8rem;
+    }
     .nav__container{
         justify-content: space-evenly;
         height: 135px;
@@ -1072,7 +1078,8 @@ body{
     .speaker__box>button{
         left: 44.5%;
         width: 200px;
-        height: 35px;
+        height: 36px;
+        font-size: 1rem;
     }
     .speaker__box>img{
         width: 230px;
@@ -1099,10 +1106,10 @@ body{
         font-size: 26px;
     }
     .speaker__text__content>article>p{
-        font-size: 17px;
+        font-size: 19px;
     }
     .speaker__text__content>div>p{
-        font-size: 17px;
+        font-size: 19px;
     }
     .speaker__text__content>div>figure{
         width: 20px;
@@ -1137,6 +1144,22 @@ body{
         font-size: 1.2rem;
         width: 270px;
         height: 55px;
+    }
+    .cube__contain__one>div{
+        width: 175px;
+        height: 175px;
+    }
+    .cube__contain__one>div:last-child{
+        top: 37%;
+        left: 27%;
+    }
+    .cube__contain__two>div{
+        width: 180px;
+        height: 180px;
+    }
+    .cube__contain__two>div:last-child{
+        top: -10%;
+        left: 4%;
     }
     .ubication__info__container{
         height: 500px;
@@ -1178,6 +1201,9 @@ body{
     }
 }
 @media (width>2600px){
+    .main__container{
+        gap: 10rem;
+    }
     .nav__container{
         height: 160px;
     }
@@ -1259,7 +1285,7 @@ body{
         left: 43.5%;
         width: 230px;
         height: 45px;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .speaker__box>img{
         width: 270px;
@@ -1286,10 +1312,10 @@ body{
         font-size: 30px;
     }
     .speaker__text__content>article>p{
-        font-size: 20px;
+        font-size: 22px;
     }
     .speaker__text__content>div>p{
-        font-size: 20px;
+        font-size: 22px;
     }
     .speaker__text__content>div>figure{
         width: 25px;
@@ -1308,7 +1334,7 @@ body{
         height: 320px;
     }
     .message__container{
-        height: 520px;
+        height: 580px;
     }
     .message__container>p{
         max-width: 1100px;
@@ -1325,8 +1351,29 @@ body{
     .ubication__info__container{
         height: 600px;
     }
+    .cube__contain__one>div{
+        width: 205px;
+        height: 205px;
+    }
+    .cube__contain__one>div:last-child{
+        top: 40%;
+        left: 30%;
+    }
+    .cube__contain__two>div{
+        width: 210px;
+        height: 210px;
+    }
+    .cube__contain__two>div:last-child{
+        top: -26%;
+        left: -12%;
+    }
     .map{
-        height: 600px;
+        display: none;
+    }
+    .map2{
+        display: block;
+        width: 58%;
+        object-fit: cover;
     }
     .ubication__info>h2{
         font-size: 60px;
@@ -1355,5 +1402,609 @@ body{
     .ubication__more__info>figure>img{
         width: 15px;
         height: 15px;
+    }
+}
+@media (width>3100px){
+    .main__container{
+        gap: 15rem;
+    }
+    .nav__container{
+        height: 200px;
+    }
+    .content__placeholder{
+        height: 200px;
+    }
+    .nav__box>div>a{
+        font-size: 2.3rem;
+    }
+    .nav__box>div:nth-child(3)>img{
+        width: 40px;
+        height: 40px;
+    }
+    .nav__logo__container>div>h2{
+        font-size: 2.7rem;
+        line-height: 33px;
+    }
+    .registered{
+        bottom: -6px;
+        left: 138px;
+        font-size: 1.5rem;
+    }
+    .image__box{
+        width: 135px;
+        height: 135px;
+    }
+    .image__box>img{
+        height: 66px;
+    }
+    .nav__button{
+        width: 300px;
+        height: 80px;
+        font-size: 1.7rem;
+    }
+    .header__container{
+        height: 820px;
+    }
+    .schedule__container>figure{
+        width: 115px;
+        height: 115px;
+    }
+    .schedule__container>figure>img{
+        width: 62px;
+        height: 62px;
+    }
+    .schedule__container>div>p:first-child{
+        font-size: 2.9rem;
+    }
+    .schedule__container>div>p:last-child{
+        width: 600px;
+        font-size: 1.8rem;
+    }
+    .title__container>h1{
+        font-size: 120px;
+    }
+    .title__container>h2{
+        font-size: 54px;
+        width: 1500px;
+    }
+    .button__header{
+        width: 330px;
+        height: 90px;
+        font-size: 1.6rem;
+    }
+    .subtitle__container>h3{
+        font-size: 110px !important;
+        width: 1400px;
+    }
+    .speakers__container{
+        height: 1150px;
+    }
+    .speakers__container>div{
+        max-width: 2200px;
+    }
+    .speaker__box{
+        max-width: 960px;
+        height: 450px;
+    }
+    .speaker__box>button{
+        left: 46%;
+        width: 290px;
+        height: 54px;
+        font-size: 1.4rem;
+    }
+    .speaker__box>img{
+        width: 320px;
+        height: 320px;
+    }
+    .speaker__box__right{
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+    .speaker__box__right>img{
+        left: auto;
+        right: -26.5%;
+    }
+    .speaker__box__right>button{
+        left: 56%;
+    }
+    .speaker__text__content{
+        width: 675px;
+    }
+    .speaker__text__content>h4{
+        font-size: 44px;
+    }
+    .speaker__text__content>article>h5{
+        font-size: 38px;
+    }
+    .speaker__text__content>article>p{
+        font-size: 25px;
+    }
+    .speaker__text__content>div>p{
+        font-size: 25px;
+    }
+    .speaker__text__content>div>figure{
+        width: 30px;
+        height: 30px;
+    }
+    .speaker__text__content>div>figure>img{
+        width: 15px;
+        height: 15px;
+    }
+    .speaker__box__left:hover>img{
+        width: 385px;
+        height: 385px;
+    }
+    .speaker__box__right:hover>img{
+        width: 385px;
+        height: 385px;
+    }
+    .message__container{
+        height: 700px;
+    }
+    .message__container>p{
+        max-width: 1400px;
+        font-size: 60px;
+    }
+    .message__container>h4{
+        font-size: 85px;
+    }
+    .message__container>button{
+        font-size: 1.6rem;
+        width: 400px;
+        height: 90px;
+    }
+    .cube__contain__one>div{
+        width: 255px;
+        height: 255px;
+    }
+    .cube__contain__one>div:last-child{
+        top: 52%;
+        left: 40%;
+    }
+    .cube__contain__two>div{
+        width: 260px;
+        height: 260px;
+    }
+    .cube__contain__two>div:last-child{
+        top: -58%;
+        left: -45%;
+    }
+    .ubication__info__container{
+        height: 800px;
+    }
+    .map2{
+        height: 800px;
+    }
+    .ubication__info>h2{
+        font-size: 78px;
+    }
+    .ubication__text>p{
+        font-size: 40px;
+    }
+    .ubication__text>p:nth-child(1){
+        max-width: 800px;
+    }
+    .ubication__text>p:nth-child(2){
+        width: 550px;
+    }
+    .ubication__info>button{
+        width: 380px;
+        height: 90px;
+        font-size: 1.7rem;
+    }
+    .ubication__more__info>p{
+        font-size: 30px;
+    }
+    .ubication__more__info>figure{
+        width: 34px;
+        height: 34px;
+    }
+    .ubication__more__info>figure>img{
+        width: 17px;
+        height: 17px;
+    }
+}
+@media (width>3700px){
+    .main__container{
+        gap: 26rem;
+    }
+    .nav__container{
+        height: 260px;
+    }
+    .content__placeholder{
+        height: 260px;
+    }
+    .nav__box>div>a{
+        font-size: 2.7rem;
+    }
+    .nav__box>div:nth-child(3)>img{
+        width: 45px;
+        height: 45px;
+    }
+    .nav__logo__container>div>h2{
+        font-size: 3.1rem;
+        line-height: 42px;
+    }
+    .registered{
+        bottom: -9px;
+        left: 180px;
+        font-size: 1.7rem;
+    }
+    .image__box{
+        width: 175px;
+        height: 175px;
+    }
+    .image__box>img{
+        height: 85px;
+    }
+    .nav__button{
+        width: 370px;
+        height: 100px;
+        font-size: 2rem;
+    }
+    .header__container{
+        height: 1000px;
+    }
+    .schedule__container>figure{
+        width: 135px;
+        height: 135px;
+    }
+    .schedule__container>figure>img{
+        width: 72px;
+        height: 72px;
+    }
+    .schedule__container>div>p:first-child{
+        font-size: 3.4rem;
+    }
+    .schedule__container>div>p:last-child{
+        width: 800px;
+        font-size: 2.1rem;
+    }
+    .title__container>h1{
+        font-size: 150px;
+    }
+    .title__container>h2{
+        font-size: 62px;
+        width: 1800px;
+    }
+    .button__header{
+        width: 420px;
+        height: 100px;
+        font-size: 2.1rem;
+    }
+    .subtitle__container>h3{
+        font-size: 125px !important;
+        width: 1600px;
+    }
+    .speakers__container{
+        height: 1150px;
+    }
+    .speakers__container>div{
+        max-width: 2600px;
+    }
+    .speaker__box{
+        max-width: 1150px;
+        height: 520px;
+    }
+    .speaker__box>button{
+        left: 45%;
+        width: 310px;
+        height: 64px;
+        font-size: 1.6rem;
+    }
+    .speaker__box>img{
+        width: 400px;
+        height: 400px;
+    }
+    .speaker__box__right{
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+    .speaker__box__right>img{
+        left: auto;
+        right: -26.5%;
+    }
+    .speaker__box__right>button{
+        left: 56%;
+    }
+    .speaker__text__content{
+        width: 800px;
+    }
+    .speaker__text__content>h4{
+        font-size: 51px;
+    }
+    .speaker__text__content>article>h5{
+        font-size: 43px;
+    }
+    .speaker__text__content>article>p{
+        font-size: 30px;
+    }
+    .speaker__text__content>div>p{
+        font-size: 30px;
+    }
+    .speaker__text__content>div>figure{
+        width: 35px;
+        height: 35px;
+    }
+    .speaker__text__content>div>figure>img{
+        width: 18px;
+        height: 18px;
+    }
+    .speaker__box__left:hover>img{
+        width: 460px;
+        height: 460px;
+    }
+    .speaker__box__right:hover>img{
+        width: 460px;
+        height: 460px;
+    }
+    .message__container{
+        height: 900px;
+    }
+    .message__container>p{
+        max-width: 1600px;
+        font-size: 75px;
+    }
+    .message__container>h4{
+        font-size: 100px;
+    }
+    .message__container>button{
+        font-size: 1.9rem;
+        width: 450px;
+        height: 100px;
+    }
+    .cube__contain__one>div{
+        width: 305px;
+        height: 305px;
+    }
+    .cube__contain__one>div:last-child{
+        top: 60%;
+        left: 50%;
+    }
+    .cube__contain__two>div{
+        width: 310px;
+        height: 310px;
+    }
+    .cube__contain__two>div:last-child{
+        top: -86%;
+        left: -75%;
+    }
+    .ubication__info__container{
+        height: 1000px;
+    }
+    .map2{
+        height: 1000px;
+    }
+    .ubication__info>h2{
+        font-size: 95px;
+    }
+    .ubication__text>p{
+        font-size: 50px;
+    }
+    .ubication__text>p:nth-child(1){
+        max-width: 1000px;
+    }
+    .ubication__text>p:nth-child(2){
+        width: 650px;
+    }
+    .ubication__info>button{
+        width: 450px;
+        height: 100px;
+        font-size: 1.9rem;
+    }
+    .ubication__more__info>p{
+        font-size: 36px;
+    }
+    .ubication__more__info>figure{
+        width: 40px;
+        height: 40px;
+    }
+    .ubication__more__info>figure>img{
+        width: 19px;
+        height: 19px;
+    }
+}
+@media (width>4500px){
+    .main__container{
+        gap: 28rem;
+    }
+    .nav__container{
+        height: 300px;
+    }
+    .content__placeholder{
+        height: 300px;
+    }
+    .nav__box>div>a{
+        font-size: 3.2rem;
+    }
+    .nav__box>div:nth-child(3)>img{
+        width: 49px;
+        height: 49px;
+    }
+    .nav__logo__container>div>h2{
+        font-size: 3.5rem;
+        line-height: 48px;
+    }
+    .registered{
+        bottom: -9px;
+        left: 203px;
+        font-size: 2rem;
+    }
+    .image__box{
+        width: 200px;
+        height: 200px;
+    }
+    .image__box>img{
+        height: 92px;
+    }
+    .nav__button{
+        width: 450px;
+        height: 120px;
+        font-size: 2.5rem;
+    }
+    .header__container{
+        height: 1200px;
+    }
+    .schedule__container>figure{
+        width: 165px;
+        height: 165px;
+    }
+    .schedule__container>figure>img{
+        width: 82px;
+        height: 82px;
+    }
+    .schedule__container>div>p:first-child{
+        font-size: 3.8rem;
+    }
+    .schedule__container>div>p:last-child{
+        width: 1000px;
+        font-size: 2.4rem;
+    }
+    .title__container>h1{
+        font-size: 180px;
+    }
+    .title__container>h2{
+        font-size: 70px;
+        width: 2000px;
+    }
+    .button__header{
+        width: 520px;
+        height: 120px;
+        font-size: 2.4rem;
+    }
+    .subtitle__container>h3{
+        font-size: 145px !important;
+        width: 1900px;
+    }
+    .speakers__container{
+        height: 1400px;
+    }
+    .speakers__container>div{
+        max-width: 3000px;
+    }
+    .speaker__box{
+        max-width: 1400px;
+        height: 600px;
+    }
+    .speaker__box>button{
+        left: 42.2%;
+        width: 360px;
+        height: 75px;
+        font-size: 1.9rem;
+    }
+    .speaker__box>img{
+        width: 460px;
+        height: 460px;
+    }
+    .speaker__box__right{
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+    .speaker__box__right>img{
+        left: auto;
+        right: -26.5%;
+    }
+    .speaker__box__right>button{
+        left: 63.6%;
+    }
+    .speaker__text__content{
+        width: 1000px;
+    }
+    .speaker__text__content>h4{
+        font-size: 60px;
+    }
+    .speaker__text__content>article>h5{
+        font-size: 51px;
+    }
+    .speaker__text__content>article>p{
+        font-size: 39px;
+    }
+    .speaker__text__content>div>p{
+        font-size: 39px;
+    }
+    .speaker__text__content>div>figure{
+        width: 40px;
+        height: 40px;
+    }
+    .speaker__text__content>div>figure>img{
+        width: 20px;
+        height: 20px;
+    }
+    .speaker__box__left:hover>img{
+        width: 510px;
+        height: 510px;
+    }
+    .speaker__box__right:hover>img{
+        width: 510px;
+        height: 510px;
+    }
+    .message__container{
+        height: 1000px;
+    }
+    .message__container>p{
+        max-width: 1900px;
+        font-size: 90px;
+    }
+    .message__container>h4{
+        font-size: 130px;
+    }
+    .message__container>button{
+        font-size: 2.3rem;
+        width: 520px;
+        height: 120px;
+    }
+    .cube__contain__one>div{
+        width: 345px;
+        height: 345px;
+    }
+    .cube__contain__one>div:last-child{
+        top: 75%;
+        left: 65%;
+    }
+    .cube__contain__two>div{
+        width: 350px;
+        height: 350px;
+    }
+    .cube__contain__two>div:last-child{
+        top: -118%;
+        left: -103%;
+    }
+    .ubication__info__container{
+        height: 1150px;
+    }
+    .map2{
+        height: 1150px;
+    }
+    .ubication__info>h2{
+        font-size: 110px;
+    }
+    .ubication__text>p{
+        font-size: 65px;
+    }
+    .ubication__text>p:nth-child(1){
+        max-width: 1300px;
+    }
+    .ubication__text>p:nth-child(2){
+        width: 800px;
+    }
+    .ubication__info>button{
+        width: 520px;
+        height: 120px;
+        font-size: 2.3rem;
+    }
+    .ubication__more__info>p{
+        font-size: 42px;
+    }
+    .ubication__more__info>figure{
+        width: 46px;
+        height: 46px;
+    }
+    .ubication__more__info>figure>img{
+        width: 21px;
+        height: 21  px;
+    }
+    .gm-style {
+        font: 400 100px Roboto, Arial, sans-serif !important;
+        text-decoration: none;
     }
 }
