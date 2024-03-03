@@ -1200,7 +1200,7 @@ body{
         height: 11px;
     }
 }
-@media (width>2600px){
+@media (width>2500px){
     .main__container{
         gap: 10rem;
     }
@@ -1404,7 +1404,7 @@ body{
         height: 15px;
     }
 }
-@media (width>3100px){
+@media (width>3000px){
     .main__container{
         gap: 15rem;
     }
@@ -1804,7 +1804,7 @@ body{
         height: 19px;
     }
 }
-@media (width>4500px){
+@media (width>4400px){
     .main__container{
         gap: 28rem;
     }
