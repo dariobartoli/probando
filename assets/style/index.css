@@ -247,7 +247,7 @@ body{
     justify-content: center;
     width: 230px;
 }
-.subtitle__container>h3:first-child, .subtitle__container>h3:nth-child(2){
+.subtitle__container>h3{
     font-size: 30px;
     color: #5E6787;
     font-weight: 500;
@@ -257,7 +257,7 @@ body{
 }
 .patrocinio{
     padding-top: 1.8rem;
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -713,7 +713,7 @@ body{
         height: 32.72px;
     }
     .menu__icon{
-        display: none !important;
+        display: none;
     }
     .registered{
         position: absolute;
@@ -762,7 +762,7 @@ body{
         padding-top: 6rem;
     }
     .patrocinio{
-        display: none !important;
+        display: none;
     }
     .subtitle__container{
         align-self: flex-start;
@@ -2050,9 +2050,5 @@ body{
     .ubication__more__info>figure>img{
         width: 21px;
         height: 21px;
-    }
-    .gm-style {
-        font: 400 100px Roboto, Arial, sans-serif !important;
-        text-decoration: none;
     }
 }
