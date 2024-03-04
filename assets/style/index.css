@@ -139,7 +139,7 @@ body{
 .header__container{
     background-image: url('../img/background-mobile.webp');
     width: 100%;
-    height: 458px;
+    height: 430px;
     background-size: cover;
     background-position: center center;
     color: #FAFBFF;
@@ -157,7 +157,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(11, 35, 80, 0.5); /* Color de fondo con transparencia */
+    background-color: rgba(11, 35, 80, 0.5);
 }
 .schedule__container{
     display: flex;
@@ -201,6 +201,7 @@ body{
     cursor: pointer;
     z-index: 1;
     transition: 0.2s;
+    filter: brightness(105%);
 }
 .button__header:hover{
     transform: scale(.95);
@@ -215,7 +216,7 @@ body{
     z-index: 1;
 }
 .title__container>h1{
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 600;
     text-shadow: 0px 0px 1px black;
 }
@@ -289,7 +290,7 @@ body{
     background-color: #F0F3FF;
     border-top: 2px solid;
     border-bottom: 2px solid;
-    border-image: linear-gradient(to right, #dfbd69, #9a783a); /* Define el degradado para el borde */
+    border-image: linear-gradient(to right, #dfbd69, #9a783a);
     border-image-slice: 1; 
     width: 100%;
     max-width: 500px;
@@ -308,7 +309,7 @@ body{
     background: rgb(223,189,105);
     background: linear-gradient(99deg, rgba(223,189,105,1) 0%, rgba(154,120,58,1) 100%);
     color: #FAFBFF;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     position: absolute;
     top: 33.5%;
@@ -361,9 +362,9 @@ body{
 .speaker__text__content>div>p{
     font-size: 14px;
     font-weight: 600;
-    background: linear-gradient(to right, #dfbd69, #9a783a); /* Definición del degradado */
-    -webkit-background-clip: text; /* Aplicar el degradado solo al área del texto */
-    color: transparent; /* Hacer el texto transparente */
+    background: linear-gradient(to right, #dfbd69, #9a783a);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 .speaker__text__content>div>figure{
     width: 17px;
@@ -420,6 +421,7 @@ body{
     cursor: pointer;
     z-index: 1;
     transition: 0.2s;
+    filter: brightness(105%);
 }
 .message__container>button:hover{
     transform: scale(.95);
@@ -559,6 +561,9 @@ body{
     }
 }
 @media (width > 290px) {
+    .title__container>h1{
+        font-size: 34px;
+    }
     .speaker__box{
         height: 520px;
     }
@@ -753,7 +758,7 @@ body{
         width: 400px;
     }
     .main__container{
-        padding-top: 8rem;
+        padding-top: 6rem;
     }
     .patrocinio{
         display: none;
@@ -772,67 +777,16 @@ body{
         font-weight: 500 !important;
     }
     .speakers__container{
-        margin-top: 12rem;
-        height: 1600px;
+        margin-top: 2rem;
     }
     .speakers__container>div{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        gap: 3.8rem 1.6rem;
-    }
-    .speaker__box{
-        max-width: 545px;
-        height: 248px;
-        box-shadow: none;
+        gap: 7rem 1.6rem;
         flex-direction: row;
-        align-items: center;
-        cursor: pointer;
-        transition: all 0.7s;
-    }
-    .speaker__box>button{
-        top: 0%;
-        left: 48%;
-        opacity: 0;
-        transition: all 0.7s;
-    }
-    .speaker__box>img{
-        width: 180px;
-        height: 180px;
-        top: 50%;
-        left: 8%;
-        transition: all 0.7s;
-    }
-    .speaker__box__left:hover, .speaker__box__right:hover{
-        box-shadow: 0px 19px 36px 0px #0032A066;
-        transition: all 0.7s;
-    }
-    .speaker__box__left:hover>img{
-        top: 33%;
-        left: 5%;
-        width: 230px;
-        height: 230px;
-        transition: all 0.7s;
-    }
-    .speaker__box__right:hover>img{
-        top: 33%;
-        left: 5%;
-        width: 230px;
-        height: 230px;
-        transition: all 0.7s;
-    }
-    .speaker__box__left:hover>button, .speaker__box__right:hover>button{
-        opacity: 1;
-        transition: all 0.7s;
-    }
-    .speaker__text__content{
-        padding-top: 2.5rem;
-        width: 380px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .message__container{
         padding-top: 4rem;
-        margin-top: 11rem;
         height: 410px;
         gap: 1.8rem;
     }
@@ -959,8 +913,10 @@ body{
     .subtitle__container>h3{
         font-size: 50px !important;
     }
-    .main__container{
-        gap: 3rem;
+    .button__header{
+        width: 240px;
+        font-size: 1.3rem;
+        height: 46px;
     }
 }
 @media (width>1400px){
@@ -968,8 +924,12 @@ body{
         width: 23px;
         height: 23px;
     }
+    .main__container{
+        padding-top: 7rem;
+        gap: 5rem;
+    }
     .speakers__container{
-        margin-top: 12rem;
+        margin-top: 7rem;
         height: 700px;
     }
     .speakers__container>div{
@@ -977,12 +937,58 @@ body{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
+        gap: 3.8rem 1.6rem;
         width: 100%;
         max-width: 1500px;
     }
+    .speaker__box{
+        max-width: 545px;
+        height: 248px;
+        box-shadow: none;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.7s;
+    }
+    .speaker__box>button{
+        top: 0%;
+        left: 48%;
+        opacity: 0;
+        transition: all 0.7s;
+    }
+    .speaker__box>img{
+        width: 180px;
+        height: 180px;
+        top: 50%;
+        left: 8%;
+        transition: all 0.7s;
+    }
+    .speaker__box__left:hover, .speaker__box__right:hover{
+        box-shadow: 0px 19px 36px 0px #0032A066;
+        transition: all 0.7s;
+    }
+    .speaker__box__left:hover>img{
+        top: 33%;
+        left: 5%;
+        width: 230px;
+        height: 230px;
+        transition: all 0.7s;
+    }
+    .speaker__box__right:hover>img{
+        top: 33%;
+        left: 5%;
+        width: 230px;
+        height: 230px;
+        transition: all 0.7s;
+    }
+    .speaker__box__left:hover>button, .speaker__box__right:hover>button{
+        opacity: 1;
+        transition: all 0.7s;
+    }
+    .speaker__text__content{
+        padding-top: 2.5rem;
+        width: 380px;
+    } 
     .speaker__box__right{
         justify-content: flex-start;
         padding-left: 1rem;
@@ -1004,6 +1010,9 @@ body{
         left: 51%;
         opacity: 0;
         transition: all 0.5s;
+    }
+    .message__container{
+        margin-top: 6rem;
     }
 }
 
@@ -1083,9 +1092,9 @@ body{
         width: 1100px;
     }
     .button__header{
-        width: 255px;
+        width: 290px;
         height: 55px;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .subtitle__container>h3{
         font-size: 72px !important;
@@ -1157,7 +1166,7 @@ body{
     }
     .message__container{
         height: 480px;
-        margin-top: 14rem;
+        margin-top: 9rem;
     }
     .message__container>p{
         max-width: 1000px;
@@ -1226,7 +1235,7 @@ body{
         height: 11px;
     }
 }
-@media (width>2500px){
+@media (width>2450px){
     .main__container{
         gap: 10rem;
     }
@@ -1289,9 +1298,9 @@ body{
         width: 1300px;
     }
     .button__header{
-        width: 290px;
+        width: 343px;
         height: 70px;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     .subtitle__container>h3{
         font-size: 90px !important;
@@ -1371,7 +1380,7 @@ body{
         font-size: 75px;
     }
     .message__container>button{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         width: 300px;
         height: 70px;
     }
@@ -1433,7 +1442,7 @@ body{
 }
 @media (width>3000px){
     .main__container{
-        gap: 15rem;
+        gap: 10rem;
     }
     .nav__container{
         height: 200px;
@@ -1495,9 +1504,9 @@ body{
         width: 1500px;
     }
     .button__header{
-        width: 330px;
+        width: 407px;
         height: 90px;
-        font-size: 1.6rem;
+        font-size: 2.2rem;
     }
     .subtitle__container>h3{
         font-size: 110px !important;
@@ -1505,6 +1514,7 @@ body{
     }
     .speakers__container{
         height: 1150px;
+        margin-top: 12rem;
     }
     .speakers__container>div{
         max-width: 2200px;
@@ -1568,6 +1578,7 @@ body{
     }
     .message__container{
         height: 700px;
+        margin-top: 14rem;
     }
     .message__container>p{
         max-width: 1400px;
@@ -1577,7 +1588,7 @@ body{
         font-size: 85px;
     }
     .message__container>button{
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         width: 400px;
         height: 90px;
     }
@@ -1634,7 +1645,7 @@ body{
 }
 @media (width>3700px){
     .main__container{
-        gap: 26rem;
+        gap: 14rem;
     }
     .nav__container{
         height: 260px;
@@ -1696,9 +1707,9 @@ body{
         width: 1800px;
     }
     .button__header{
-        width: 420px;
+        width: 510px;
         height: 100px;
-        font-size: 2.1rem;
+        font-size: 2.7rem;
     }
     .subtitle__container>h3{
         font-size: 125px !important;
@@ -1706,6 +1717,7 @@ body{
     }
     .speakers__container{
         height: 1150px;
+        margin-top: 16rem;
     }
     .speakers__container>div{
         max-width: 2600px;
@@ -1769,6 +1781,7 @@ body{
     }
     .message__container{
         height: 900px;
+        margin-top: 22rem;
     }
     .message__container>p{
         max-width: 1600px;
@@ -1778,7 +1791,7 @@ body{
         font-size: 100px;
     }
     .message__container>button{
-        font-size: 1.9rem;
+        font-size: 2.1rem;
         width: 450px;
         height: 100px;
     }
@@ -1835,7 +1848,7 @@ body{
 }
 @media (width>4400px){
     .main__container{
-        gap: 28rem;
+        gap: 18rem;
     }
     .nav__container{
         height: 300px;
@@ -1897,9 +1910,9 @@ body{
         width: 2000px;
     }
     .button__header{
-        width: 520px;
+        width: 615px;
         height: 120px;
-        font-size: 2.4rem;
+        font-size: 3.1rem;
     }
     .subtitle__container>h3{
         font-size: 145px !important;
@@ -1970,6 +1983,7 @@ body{
     }
     .message__container{
         height: 1000px;
+        margin-top: 24rem;
     }
     .message__container>p{
         max-width: 1900px;
@@ -1979,7 +1993,7 @@ body{
         font-size: 130px;
     }
     .message__container>button{
-        font-size: 2.3rem;
+        font-size: 2.4rem;
         width: 520px;
         height: 120px;
     }
