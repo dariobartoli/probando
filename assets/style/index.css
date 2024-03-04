@@ -1020,6 +1020,9 @@ body{
     .subtitle__container>h3{
         font-size: 58px !important;
     }
+    .nav__container{
+        justify-content: space-evenly;
+    }
 }
 
 @media (width>1920px){
