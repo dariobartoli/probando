@@ -266,6 +266,9 @@ body{
     color: #5E6787;
     font-weight: 600;
 }
+.patrocinio>img{
+    display: block;
+}
 /* SPEAKERS SECTION */
 .speakers__container{
     background-color: #DDE2F9;
