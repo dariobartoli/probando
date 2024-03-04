@@ -257,7 +257,7 @@ body{
 }
 .patrocinio{
     padding-top: 1.8rem;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -266,9 +266,7 @@ body{
     color: #5E6787;
     font-weight: 600;
 }
-.patrocinio>img{
-    display: block;
-}
+
 /* SPEAKERS SECTION */
 .speakers__container{
     background-color: #DDE2F9;
@@ -764,7 +762,7 @@ body{
         padding-top: 6rem;
     }
     .patrocinio{
-        display: none;
+        display: none !important;
     }
     .subtitle__container{
         align-self: flex-start;
